@@ -57,8 +57,8 @@ esac
 
 export EDITOR=vim
 export VISUAL=vim
-export CC=$(which gcc)
-export CXX=$(which g++)
+export CC=$(which gcc 2&> /dev/null)
+export CXX=$(which g++ 2&> /dev/null)
 export PYTHONSTARTUP=$HOME/.pyrc
 
 # Auto Correct spelling mistakes
