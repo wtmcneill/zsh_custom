@@ -3,4 +3,6 @@
 
 if [[ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
     source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+else
+    echo "Could not find zsh-syntax-highlighting. Try installing it via your package manager."
 fi
