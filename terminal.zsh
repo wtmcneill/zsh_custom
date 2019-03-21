@@ -126,6 +126,10 @@ bindkey "^[s" insert-sudo
 
 
 if [[ -f ~/.proxy ]]; then
-	source ~/.proxy
-fi  
+    source ~/.proxy
+fi
+
+if [[ -d ~/.zsh_extras ]]; then
+    source ~/.zsh_extras/*
+fi
 
